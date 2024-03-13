@@ -75,7 +75,7 @@ def user_logout(request):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 @api_view(['POST'])
-@permission_classes([IsAuthenticated])
+@permission_classes([permissions.IsAuthenticated])
 def create_profile(request):
     if request.method == 'POST':
         user = request.user
