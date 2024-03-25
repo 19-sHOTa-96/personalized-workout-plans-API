@@ -15,6 +15,7 @@ class Profile(models.Model):
         ('I', 'Intermediate'),
         ('A', 'Advanced'),
     ]
+    
     fitness_level = models.CharField(max_length=1, choices=FITNESS_LEVEL_CHOICES, null=True, blank=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
@@ -22,11 +23,5 @@ class Profile(models.Model):
 
     def __str__(self):
         return f"profile of {self.user.username if self.user else 'unknown'}"
-
-
-
-
-
-
 
 

@@ -47,4 +47,3 @@ class Progress(models.Model):
 
 
 
-

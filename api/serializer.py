@@ -18,8 +18,6 @@ class ProgressSerializer(serializers.ModelSerializer):
 		model = Progress
 		fields = '__all__'
 
-
-# User Login/Logout Register
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
@@ -29,9 +27,5 @@ class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
         fields = '__all__'
-
-
-
-
 
 

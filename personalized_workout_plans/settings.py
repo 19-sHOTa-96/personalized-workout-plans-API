@@ -28,7 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,6 +40,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'workout_plans.apps.WorkoutPlansConfig',
     'rest_framework',
+    'drf_yasg',
 ]
 
 REST_FRAMEWORK = {
